@@ -1,0 +1,73 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/simulation/questa
+T_opt
+!s110 1738354113
+VOCW=@lJe;SK=`gn[`B^Wi0
+04 16 4 work button_to_led_tb fast 0
+=1-089df4a7f4ae-679d2dc0-1d2-6484
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vbutton_to_led
+2C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led.v
+Z3 !s110 1738354109
+!i10b 1
+!s100 i_RPa0R;^KPEJ@]IXhQcS0
+IShoaA_JhLDzeMbNd4TkBa0
+R1
+w1738338376
+8C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led.v
+FC:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led.v
+!i122 0
+L0 6 27
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1738354109.000000
+!s107 C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led|C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work {+incdir+C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vbutton_to_led_tb
+2C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led_tb.v
+R3
+!i10b 1
+!s100 EY;:=aJok781V0XneS]U=1
+I1X>;UNbZLYjf[@ZWlWOmk1
+R1
+w1738353807
+8C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led_tb.v
+FC:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led_tb.v
+!i122 1
+L0 4 23
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led|C:/intelFPGA_lite/DE10-Lite_v.2.1.0_SystemCD/Demonstrations/Button mapped to Led/button_to_led_tb.v|
+!i113 0
+R7
+R8
+R2

@@ -1,0 +1,113 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  max10
+Quartus root          :  c:/intelfpga_lite/23.1std/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/23.1std/quartus/eda/sim_lib
+Simulation Tool       :  questa intel fpga
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  button_to_led.vo
+Sim SDF file          :  button_to_led__verilog.sdo
+Sim dir               :  simulation\questa
+
+=======================================================
+
+Info: Starting NativeLink simulation with Questa Intel FPGA software
+Sourced NativeLink script c:/intelfpga_lite/23.1std/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File button_to_led_run_msim_gate_verilog.do already exists - backing up current file as button_to_led_run_msim_gate_verilog.do.bak1
+Probing transcript
+Questa Intel FPGA Info: # Reading pref.tcl
+Questa Intel FPGA Info: # //  Questa Intel Starter FPGA Edition-64
+Questa Intel FPGA Info: # //  Version 2023.3 win64 Jul 17 2023
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # //  Copyright 1991-2023 Mentor Graphics Corporation
+Questa Intel FPGA Info: # //  All Rights Reserved.
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # //  QuestaSim and its associated documentation contain trade
+Questa Intel FPGA Info: # //  secrets and commercial or financial information that are the property of
+Questa Intel FPGA Info: # //  Mentor Graphics Corporation and are privileged, confidential,
+Questa Intel FPGA Info: # //  and exempt from disclosure under the Freedom of Information Act,
+Questa Intel FPGA Info: # //  5 U.S.C. Section 552. Furthermore, this information
+Questa Intel FPGA Info: # //  is prohibited from disclosure under the Trade Secrets Act,
+Questa Intel FPGA Info: # //  18 U.S.C. Section 1905.
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # do button_to_led_run_msim_gate_verilog.do
+Questa Intel FPGA Info: # if {[file exists gate_work]} {
+Questa Intel FPGA Info: # 	vdel -lib gate_work -all
+Questa Intel FPGA Info: # }
+Questa Intel FPGA Info: # vlib gate_work
+Questa Intel FPGA Info: # vmap work gate_work
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+Questa Intel FPGA Info: # vmap work gate_work 
+Questa Intel FPGA Info: # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+Questa Intel FPGA Info: # Modifying modelsim.ini
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vlog -vlog01compat -work work +incdir+. {button_to_led.vo}
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+Questa Intel FPGA Info: # Start time: 22:49:49 on Jan 31,2025
+Questa Intel FPGA Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." button_to_led.vo 
+Questa Intel FPGA Info: # -- Compiling module button_to_led
+Questa Intel FPGA Info: # -- Compiling module hard_block
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # Top level modules:
+Questa Intel FPGA Info: # 	button_to_led
+Questa Intel FPGA Info: # End time: 22:49:50 on Jan 31,2025, Elapsed time: 0:00:01
+Questa Intel FPGA Info: # Errors: 0, Warnings: 0
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/Projects/Button\ mapped\ to\ Led {C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v}
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+Questa Intel FPGA Info: # Start time: 22:49:50 on Jan 31,2025
+Questa Intel FPGA Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/Projects/Button mapped to Led" C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v 
+Questa Intel FPGA Info: # -- Compiling module button_to_led_tb
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # Top level modules:
+Questa Intel FPGA Info: # 	button_to_led_tb
+Questa Intel FPGA Info: # End time: 22:49:50 on Jan 31,2025, Elapsed time: 0:00:00
+Questa Intel FPGA Info: # Errors: 0, Warnings: 0
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  button_to_led_tb
+Questa Intel FPGA Info: # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" button_to_led_tb 
+Questa Intel FPGA Info: # Start time: 22:49:50 on Jan 31,2025
+Questa Intel FPGA Info: # ** Note: (vsim-3812) Design is being optimized...
+Questa Intel FPGA Warning: # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+Questa Intel FPGA Warning: # ** Warning: button_to_led.vo(332): (vopt-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC1~ '.  Expected 8, found 7.
+Questa Intel FPGA Warning: # ** Warning: button_to_led.vo(332): (vopt-2718) [TFMPC] - Missing connection for port 'clk_dft'.
+Questa Intel FPGA Warning: # ** Warning: button_to_led.vo(355): (vopt-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC2~ '.  Expected 8, found 7.
+Questa Intel FPGA Warning: # ** Warning: button_to_led.vo(355): (vopt-2718) [TFMPC] - Missing connection for port 'clk_dft'.
+Questa Intel FPGA Info: # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=5.
+Questa Intel FPGA Info: # Loading work.button_to_led_tb(fast)
+Questa Intel FPGA Info: # Loading work.button_to_led(fast)
+Questa Intel FPGA Info: # Loading work.hard_block(fast)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_io_obuf(fast)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf(fast)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__1)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__2)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_unvm(fast)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_adcblock(fast)
+Questa Intel FPGA Info: # Loading fiftyfivenm_ver.fiftyfivenm_adcblock(fast__1)
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # add wave *
+Questa Intel FPGA Warning: # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+Questa Intel FPGA Info: #           File in use by: justi  Hostname: JUSTIN_ZENBOOK  ProcessID: 25732
+Questa Intel FPGA Info: #           Attempting to use alternate WLF file "./wlftixvd3n".
+Questa Intel FPGA Warning: # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+Questa Intel FPGA Info: #           Using alternate file: ./wlftixvd3n
+Questa Intel FPGA Info: # view structure
+Questa Intel FPGA Info: # .main_pane.structure.interior.cs.body.struct
+Questa Intel FPGA Info: # view signals
+Questa Intel FPGA Info: # .main_pane.objects.interior.cs.body.tree
+Questa Intel FPGA Info: # run 1 us
+Questa Intel FPGA Info: # Time=0 | KEY[1:0]=11 | LEDR[3:0]=0000
+Questa Intel FPGA Info: # Time=10000 | KEY[1:0]=10 | LEDR[3:0]=1001
+Questa Intel FPGA Info: # Time=20000 | KEY[1:0]=01 | LEDR[3:0]=1010
+Questa Intel FPGA Info: # Time=30000 | KEY[1:0]=00 | LEDR[3:0]=0111
+Questa Intel FPGA Info: # ** Note: $stop    : C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v(24)
+Questa Intel FPGA Info: #    Time: 40 ns  Iteration: 0  Instance: /button_to_led_tb
+Questa Intel FPGA Info: # Break in Module button_to_led_tb at C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v line 24
+Questa Intel FPGA Info: # End time: 23:02:50 on Jan 31,2025, Elapsed time: 0:13:00
+Questa Intel FPGA Info: # Errors: 0, Warnings: 7
+Info: NativeLink simulation flow was successful

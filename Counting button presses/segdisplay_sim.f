@@ -1,0 +1,2 @@
+segdisplay_sim/segdisplay.v
+segdisplay_sim/altera_gpio_lite/altera_gpio_lite.sv

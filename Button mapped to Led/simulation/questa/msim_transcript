@@ -1,0 +1,91 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do button_to_led_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work gate_work 
+# Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {button_to_led.vo}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 22:49:49 on Jan 31,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." button_to_led.vo 
+# -- Compiling module button_to_led
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	button_to_led
+# End time: 22:49:50 on Jan 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/Projects/Button\ mapped\ to\ Led {C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 22:49:50 on Jan 31,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/Projects/Button mapped to Led" C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v 
+# -- Compiling module button_to_led_tb
+# 
+# Top level modules:
+# 	button_to_led_tb
+# End time: 22:49:50 on Jan 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  button_to_led_tb
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" button_to_led_tb 
+# Start time: 22:49:50 on Jan 31,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: button_to_led.vo(332): (vopt-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC1~ '.  Expected 8, found 7.
+# ** Warning: button_to_led.vo(332): (vopt-2718) [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: button_to_led.vo(355): (vopt-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC2~ '.  Expected 8, found 7.
+# ** Warning: button_to_led.vo(355): (vopt-2718) [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=5.
+# Loading work.button_to_led_tb(fast)
+# Loading work.button_to_led(fast)
+# Loading work.hard_block(fast)
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast)
+# Loading fiftyfivenm_ver.fiftyfivenm_io_obuf(fast)
+# Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf(fast)
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__1)
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__2)
+# Loading fiftyfivenm_ver.fiftyfivenm_unvm(fast)
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock(fast)
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock(fast__1)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: justi  Hostname: JUSTIN_ZENBOOK  ProcessID: 25732
+#           Attempting to use alternate WLF file "./wlftixvd3n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftixvd3n
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# Time=0 | KEY[1:0]=11 | LEDR[3:0]=0000
+# Time=10000 | KEY[1:0]=10 | LEDR[3:0]=1001
+# Time=20000 | KEY[1:0]=01 | LEDR[3:0]=1010
+# Time=30000 | KEY[1:0]=00 | LEDR[3:0]=0111
+# ** Note: $stop    : C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v(24)
+#    Time: 40 ns  Iteration: 0  Instance: /button_to_led_tb
+# Break in Module button_to_led_tb at C:/intelFPGA_lite/Projects/Button mapped to Led/button_to_led_tb.v line 24
+# End time: 23:02:50 on Jan 31,2025, Elapsed time: 0:13:00
+# Errors: 0, Warnings: 7

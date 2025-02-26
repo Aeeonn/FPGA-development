@@ -1,0 +1,7 @@
+	component segdisplay is
+		port (
+			din     : in  std_logic_vector(3 downto 0) := (others => 'X'); -- export
+			pad_out : out std_logic_vector(3 downto 0)                     -- export
+		);
+	end component segdisplay;
+
